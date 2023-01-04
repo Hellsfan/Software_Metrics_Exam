@@ -16,7 +16,7 @@ class TestAbsoluteMethods(unittest.TestCase):
        input_str="-5";
        with self.assertRaises(TypeError):
             absolute(input_str)
-
+            
     def test_input_blank(self):
         input_blank=""
         with self.assertRaises(TypeError):
@@ -24,8 +24,8 @@ class TestAbsoluteMethods(unittest.TestCase):
     
     def test_input_null(self):
         input_null=NULL
-        with self.assertRaises(TypeError):
-            absolute(input_null)
+        self.assertEqual(absolute(input_null),0.0)
+        self.assertNotEqual(absolute(input_null),1)
 
     def test_invalid_var_type(self):
         input_wrong_type=[-5,2]
@@ -33,4 +33,4 @@ class TestAbsoluteMethods(unittest.TestCase):
             absolute(input_wrong_type)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
