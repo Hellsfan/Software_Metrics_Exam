@@ -27,6 +27,23 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="htmlcov\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="htmlcov\.gitignore" />
+    <Content Include="htmlcov\coverage_html.js" />
+    <Content Include="htmlcov\favicon_32.png" />
+    <Content Include="htmlcov\functionality_code_py.html" />
+    <Content Include="htmlcov\index.html" />
+    <Content Include="htmlcov\keybd_closed.png" />
+    <Content Include="htmlcov\keybd_open.png" />
+    <Content Include="htmlcov\Software_Metrics_Exam_py.html" />
+    <Content Include="htmlcov\status.json" />
+    <Content Include="htmlcov\style.css" />
+    <Content Include="htmlcov\test_cases_py.html" />
+    <Content Include="htmlcov\Test_py.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
