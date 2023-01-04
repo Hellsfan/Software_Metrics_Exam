@@ -4,13 +4,21 @@ from Software_Metrics_Exam import absolute
 
 class TestAbsoluteMethods(unittest.TestCase):
 
-    def test_equal(self):
+    def test_equal_int(self):
         self.assertEqual(absolute(-5),5)
         self.assertEqual(absolute(5),5)
 
-    def test_not_equal(self):
+    def test_not_equal_int(self):
         self.assertNotEqual(absolute(-10), -10)
         self.assertNotEqual(absolute(10), -10)
+
+    def test_equal_float(self):
+        self.assertEqual(absolute(-0.1),0.1)
+        self.assertEqual(absolute(25),25)
+
+    def test_not_equal_float(self):
+        self.assertNotEqual(absolute(-2.3), -2.3)
+        self.assertNotEqual(absolute(3.14), -3.14)
 
     def test_input_str(self):
        input_str="-5";
