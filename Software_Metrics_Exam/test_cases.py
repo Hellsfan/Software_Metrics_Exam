@@ -1,6 +1,6 @@
 from asyncio.windows_events import NULL
 import unittest
-from Software_Metrics_Exam import absolute
+from functionality_code import absolute
 
 class TestAbsoluteMethods(unittest.TestCase):
 
@@ -21,15 +21,15 @@ class TestAbsoluteMethods(unittest.TestCase):
         self.assertNotEqual(absolute(3.14), -3.14)
 
     def test_input_str(self):
-       input_str="-5";
-       with self.assertRaises(TypeError):
+        input_str="-5"
+        with self.assertRaises(TypeError):
             absolute(input_str)
-            
+
     def test_input_blank(self):
         input_blank=""
         with self.assertRaises(TypeError):
             absolute(input_blank)
-    
+
     def test_input_null(self):
         input_null=NULL
         self.assertEqual(absolute(input_null),0.0)

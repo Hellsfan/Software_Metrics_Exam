@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1834eb09-73f0-463a-b2c9-86002d579524</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Software_Metrics_Exam.py</StartupFile>
+    <StartupFile>functionality_code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Software_Metrics_Exam</Name>
     <RootNamespace>Software_Metrics_Exam</RootNamespace>
+    <TestFramework>unittest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,8 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Software_Metrics_Exam.py" />
-    <Compile Include="Test.py">
+    <Compile Include="functionality_code.py" />
+    <Compile Include="test_cases.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
